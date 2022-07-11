@@ -10,11 +10,10 @@ function App() {
   useEffect(() => {
     const requestOptions = {
       method: "GET",
-      redirect: "follow",
     };
 
     fetch(
-      "https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular",
+      "https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyAtrSZkopq--QXlpEYQ5SrM9Kg5TZlZMl0",
       requestOptions
     )
       .then((response) => response.json())
